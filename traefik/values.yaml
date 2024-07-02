@@ -109,9 +109,11 @@ podDisruptionBudget:
 
 # -- Create a default IngressClass for Traefik
 ingressClass:
+  # -- It only create the resource. One can enable it on k8s providers configuration.
   enabled: true
   isDefaultClass: true
-  # name: my-custom-class
+  # -- Allows to specify a custom name. See EXAMPLES.md for a complete configuration.
+  name: 
 
 core:
   # -- Can be used to use globally v2 router syntax
